@@ -12,7 +12,7 @@ $ make install
 
 ## ln_plus.py
 
-Creates symbolic links in a simpler way. We use it in `Makefile`s,
+Creates symbolic links in a simpler way. We use it in a `Makefile`,
 were sometimes we know the path relative to the `Makefile`,
 but not once we've moved to the target folder.
 
@@ -29,7 +29,8 @@ optional arguments:
   --name NAME  the name of the created symlink
 ```
 
-For example, this creates a link to `ln_plus.py` into `/usr/local/bin` from this folder:
+For example, this creates a link to `ln_plus.py` into `/usr/local/bin` from this folder
+(this what we actually use in https://github.com/zugaldia/scripts/blob/master/Makefile).
 
 ```
 $ ./ln_plus.py --from /usr/local/bin --to ln_plus.py
@@ -38,7 +39,7 @@ $ ./ln_plus.py --from /usr/local/bin --to ln_plus.py
 ## prepare_build.py
 
 Helps you change the stage and build number in a file,
-works well with text, Python, and JS files.
+works well with plain text, Python, and Javascript files.
 
 Usage:
 
