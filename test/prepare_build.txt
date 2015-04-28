@@ -1,0 +1,9 @@
+'''
+I'm just a silly test, try me:
+
+    $ python prepare_build.py --filename=prepare_build_test.txt
+
+'''
+
+PROJECT_BUILD = 41
+PROJECT_STAGE = 'production'
